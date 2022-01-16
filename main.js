@@ -1,4 +1,4 @@
-var usuario = prompt('¿Qué eligues?');;
+var usuario = prompt('Elige piedra papel o tijera');
 
 var maquina = Math.floor(Math.random() *3);
 
