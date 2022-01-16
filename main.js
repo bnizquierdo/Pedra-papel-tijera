@@ -1,21 +1,17 @@
-document.getElementById("inicio").addEventListener("click", myFunction);
-
-function myFunction() {
-  var usuario = prompt('¿Qué eligues?');;
-}
-
+var usuario = prompt('¿Qué eligues?');;
 
 var maquina = Math.floor(Math.random() *3);
 
 if (usuario === "piedra") {
     if(maquina == 0){
-        alert('empate');
+        alert('Empatasteis. La máquina eligio piedra');
+        
     }else{
         if(maquina == 1){
-            alert('ganaste');
+            alert('Perdiste. La máquina eligio papel');
         }else{
             if(maquina == 2){
-                alert('perdiste');
+                alert('Ganaste. La máquina eligio tijera');
             }
         }
     }
@@ -23,13 +19,13 @@ if (usuario === "piedra") {
 
 if (usuario === "papel") {
     if(maquina == 0){
-        alert('ganaste');
+        alert('Ganaste. La máquina eligio piedra');
     }else{
         if(maquina == 1){
-            alert('empate');
+            alert('Empatasteis. La máquina eligio papel');
         }else{
             if(maquina == 2){
-                alert('perdiste');
+                alert('Perdiste. La máquina eligio tijera');
             }
         }
     }
@@ -38,16 +34,14 @@ if (usuario === "papel") {
 if (usuario === "tijera") {
 
     if(maquina == 0){
-        alert('perdiste');
+        alert('Perdiste. La máquina eligio piedra');
     }else{
         if(maquina == 1){
-            alert('ganaste');
+            alert('Ganaste. La máquina eligio papel');
         }else{
             if(maquina == 2){
-                alert('empate');
+                alert('Empatasteis. La máquina eligio tijera');
             }
         }
     }
 }
-
-
