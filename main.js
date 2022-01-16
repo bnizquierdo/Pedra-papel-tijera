@@ -1,9 +1,7 @@
-var usuario;
+document.getElementById("inicio").addEventListener("click", myFunction);
 
-document.getElementById("inicio").addEventListener("click", comienzo);
-
-function comienzo() {
-    usuario = prompt('¿Qué eligues?');
+function myFunction() {
+  var usuario = prompt('¿Qué eligues?');;
 }
 
 
@@ -51,4 +49,5 @@ if (usuario === "tijera") {
         }
     }
 }
+
 
